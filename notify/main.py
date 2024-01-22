@@ -3,6 +3,7 @@ import click
 from notify.slack import messager
 
 
+@click.command()
 @click.option(
     "--message",
     required=True,
