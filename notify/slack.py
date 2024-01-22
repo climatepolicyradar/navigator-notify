@@ -9,10 +9,10 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__file__)
 
-ENDPOINT = os.environ["SLACK_WEBHOOK_URL"]
 
+def slack_message(message: str) -> None:
+    ENDPOINT = os.environ["SLACK_WEBHOOK_URL"]
 
-def messager(message: str) -> None:
     client = WebhookClient(
         url=ENDPOINT,
         user_agent_prefix="Navigator Notify",
