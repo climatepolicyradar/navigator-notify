@@ -5,7 +5,12 @@ repos:
       - id: ruff
         args: [ --fix, --show-fixes ]
       - id: ruff-format
-  - repo: https://github.com/RobertCraigie/pyright-python
-    rev: v1.1.348
+  - repo: local
     hooks:
       - id: pyright
+        name: pyright (backend)
+        entry: pyright
+        language: node
+        files: ^src/
+        types: [python]
+        additional_dependencies: ['pyright@1.1.348']

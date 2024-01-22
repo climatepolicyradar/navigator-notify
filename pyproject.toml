@@ -9,6 +9,8 @@ packages = [{include = "notify"}]
 [tool.poetry.dependencies]
 python = "^3.10"
 pre-commit = "^3.6.0"
+slack-sdk = "^3.26.2"
+click = "^8.1.7"
 
 
 [build-system]
@@ -17,3 +19,6 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 navigator-notify = 'notify.main:main'
+
+[tool.pyright]
+include = ["notify"]
