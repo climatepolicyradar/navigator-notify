@@ -4,12 +4,16 @@ version = "0.1.0"
 description = ""
 authors = ["olaughter <fred@climatepolicyradar.org>"]
 readme = "README.md"
-packages = [{include = "navigator_notify"}]
+packages = [{include = "notify"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+pre-commit = "^3.6.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+navigator-notify = 'notify.main:main'
