@@ -9,7 +9,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__file__)
 
-ENDPOINT = os.getenv("SLACK_WEBHOOK_URL")
+ENDPOINT = os.environ["SLACK_WEBHOOK_URL"]
 
 
 def messager(message: str) -> None:
