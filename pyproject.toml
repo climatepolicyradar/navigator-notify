@@ -10,7 +10,7 @@ packages = [{include = "notify"}]
 python = "^3.10"
 pre-commit = "^4.2.0"
 slack-sdk = "^3.35.0"
-click = "^8.1.8"
+click = "^8.2.0"
 
 
 [build-system]
