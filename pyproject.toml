@@ -8,7 +8,7 @@ packages = [{include = "notify"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pre-commit = "^4.2.0"
+pre-commit = "^4.3.0"
 slack-sdk = "^3.36.0"
 click = "^8.2.1"
 
