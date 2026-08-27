@@ -12,8 +12,6 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    reviewers:
-      - climatepolicyradar/deng
     groups:
       all:
         applies-to: version-updates
@@ -31,8 +29,6 @@ updates:
     directory: /
     schedule:
       interval: weekly
-    reviewers:
-      - climatepolicyradar/deng
     groups:
       all:
         applies-to: version-updates
